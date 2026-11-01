@@ -1,4 +1,4 @@
-// AURORA v0.2 — JS vanilla: menu fullscreen, reveal, timeline, bottom sheet, galeria
+// AURORA v2 — JS vanilla: menu fullscreen, reveal, timeline, bottom sheet, galeria
 document.documentElement.classList.remove('no-js');
 const $=(s,c=document)=>c.querySelector(s),$$=(s,c=document)=>[...c.querySelectorAll(s)];
 const mb=$('.menu-btn');if(mb)mb.addEventListener('click',()=>{const o=document.body.classList.toggle('menu-open');mb.setAttribute('aria-expanded',o)});
@@ -11,4 +11,4 @@ function sel(i,f){tabs.forEach((t,j)=>{t.setAttribute('aria-selected',i===j);t.t
 // bottom sheet filtros
 $$('[data-sheet]').forEach(b=>b.addEventListener('click',()=>document.body.classList.toggle('sheet-open',b.dataset.sheet==='open')));
 // galeria
-$$('.thumbs button').forEach(b=>b.addEventListener('click',()=>{$$('.thumbs button').forEach(x=>x.setAttribute('aria-pressed',x===b));$('.gallery .main span').textContent=b.dataset.label}));
+$$('.thumbs button').forEach(b=>b.addEventListener('click',()=>{$$('.thumbs button').forEach(x=>x.setAttribute('aria-pressed',x===b));$('.gallery .gl').textContent=b.dataset.label}));
