@@ -1,4 +1,4 @@
-// AURORA v2 — JS vanilla: menu fullscreen, reveal, timeline, bottom sheet, galeria
+// Protótipo da Rede - T.I — JS vanilla: menu fullscreen, reveal, timeline, bottom sheet, galeria
 document.documentElement.classList.remove('no-js');
 const $=(s,c=document)=>c.querySelector(s),$$=(s,c=document)=>[...c.querySelectorAll(s)];
 const mb=$('.menu-btn');if(mb)mb.addEventListener('click',()=>{const o=document.body.classList.toggle('menu-open');mb.setAttribute('aria-expanded',o)});

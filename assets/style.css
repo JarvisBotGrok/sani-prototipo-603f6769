@@ -1,5 +1,5 @@
 @import url('fonts.css');@import url('tokens.css');
-/* AURORA v2 — direção premium agro. CSS vanilla, sem framework. */
+/* Protótipo da Rede - T.I — direção premium agro. CSS vanilla, sem framework. */
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--font);color:var(--c-text);line-height:var(--lh);background:#fff;-webkit-font-smoothing:antialiased}
 img,svg{max-width:100%}a{color:var(--c-green-text)}
 :focus-visible{outline:3px solid var(--c-focus);outline-offset:3px;border-radius:4px}
@@ -188,7 +188,7 @@ header.site .container{max-width:1400px}nav.main a,header.site .btn{white-space:
 body.menu-open header.site{backdrop-filter:none;-webkit-backdrop-filter:none;background:var(--c-bg-deep)}
 body.menu-open .mbar{display:none}
 @media (max-width:600px){table.docs{min-width:0!important}table.docs thead{display:none}table.docs tr{display:grid;gap:8px;padding:14px 0;border-bottom:1px solid var(--c-border)}table.docs td{border:0;padding:0}}
-/* ===== AURORA v2 (31/10/2026) — camada premium: fotos reais de embalagem, selo PROVISÓRIO, editorial ===== */
+/* ===== Protótipo da Rede - T.I (31/10/2026) — camada premium: fotos reais de embalagem, selo PROVISÓRIO, editorial ===== */
 body{overflow-x:hidden;font-feature-settings:"ss01"}
 header.site .container{gap:14px}
 .tag-prov{display:inline-flex;align-items:center;font-size:10.5px;background:#ffd84d;color:#3a2a00;padding:3px 8px;border-radius:999px;font-weight:700;letter-spacing:.1em;white-space:nowrap;vertical-align:middle}
