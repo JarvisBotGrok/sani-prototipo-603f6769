@@ -9,5 +9,5 @@ g.addEventListener('keydown',e=>{if(e.key==='ArrowLeft')go(i-1);if(e.key==='Arro
 let x0=null;const st=g.querySelector('.ug-stage');
 st.addEventListener('pointerdown',e=>{x0=e.clientX});st.addEventListener('pointerup',e=>{if(x0===null)return;const d=e.clientX-x0;if(Math.abs(d)>40)go(i+(d<0?1:-1));x0=null});
 // vídeo: se o arquivo existir, troca o espaço reservado pelo player
-const v=g.querySelector('video[data-src]');if(v){fetch(v.dataset.src,{method:'HEAD'}).then(r=>{if(r.ok){v.src=v.dataset.src;v.hidden=false;g.querySelector('.ug-vph').remove()}}).catch(()=>{})}
+const v=g.querySelector('video[data-src]');if(v){fetch(v.dataset.src,{method:'HEAD'}).then(r=>{if(r.ok){v.src=v.dataset.src;v.hidden=false;if(v.textTracks[0])v.textTracks[0].mode='showing';g.querySelector('.ug-vph').remove()}}).catch(()=>{})}
 go(0)})();
